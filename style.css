@@ -38,10 +38,10 @@ button:hover {
 
 canvas {
     display: block;
-    padding: 30px;
     margin: 20px auto;
     border: 1px solid #ccc;
-    max-width: 100%;
+    max-width: 450px;
+    width: 100%;
 }
 
 #download {
