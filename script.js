@@ -11,7 +11,7 @@ $(document).ready(function () {
         let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext("2d");
         let image = new Image();
-        image.src = "template.jpg"; // Make sure to add your image file
+        image.src = "greetings.jpg"; // Make sure to add your image file
         
         image.onload = function () {
             canvas.width = image.width;
@@ -19,15 +19,15 @@ $(document).ready(function () {
             ctx.drawImage(image, 0, 0);
 
             ctx.font = "30px Cairo";
-            ctx.fillStyle = "black";
+            ctx.fillStyle = "white";
             ctx.textAlign = "center";
 
             // Name placement
-            ctx.fillText(name, canvas.width / 2, canvas.height * 0.83);
+            ctx.fillText(name, canvas.width / 4.5, canvas.height * 0.844);
 
             // Message placement
             ctx.font = "24px Cairo";
-            ctx.fillText(message, canvas.width / 2, canvas.height * 0.88);
+            ctx.fillText(message, canvas.width / 4.5, canvas.height * 0.911);
 
             // Enable download button
             let imageData = canvas.toDataURL("image/png");
